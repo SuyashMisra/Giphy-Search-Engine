@@ -4,7 +4,7 @@ document.querySelector(".js-go").addEventListener('click', function(){
     document.querySelector(".js-container").innerHTML = ""; //clear container before every new search
     var a = document.querySelector(".js-userinput").value;  //grab the input from text input
 
-    var url = "http://api.giphy.com/v1/gifs/search?q="+a+"&api_key=dc6zaTOxFJmzC";
+    var url = "https://api.giphy.com/v1/gifs/search?q="+a+"&api_key=dc6zaTOxFJmzC";
 
     // AJAX Request
     var GiphyAJAXCall = new XMLHttpRequest();
@@ -25,7 +25,7 @@ document.querySelector(".js-userinput").addEventListener('keyup', function(e){
     //if the key pressed is 'Enter' then push, keyCode of enter is 13
     if (e.which===13) {
         document.querySelector(".js-container").innerHTML = ""; //clear container before every new search
-        var url = "http://api.giphy.com/v1/gifs/search?q="+a+"&api_key=dc6zaTOxFJmzC";
+        var url = "https://api.giphy.com/v1/gifs/search?q="+a+"&api_key=dc6zaTOxFJmzC";
 
         // AJAX Request
         var GiphyAJAXCall = new XMLHttpRequest();
